@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -1002,8 +1003,7 @@ function ScheduleForm({ spots, onClose, onSuccess }) {
                 const san = s.sansai.map(id=>SANSAI_DATA.find(x=>x.id===id)?.name).filter(Boolean);
                 return sn || san.length ? `第${i+1}箇所：${sn}${san.length?` ／ ${san.join("・")}` : ""}` : "";
               }),
-            ].filter(Boolean).join("
-")}
+            ].filter(Boolean).join("\n")}
           </div>
         </div>
 
